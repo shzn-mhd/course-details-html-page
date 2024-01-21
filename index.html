@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h2 {
+            color: brown;
+        }
+        
+        h1 {
+            color: teal;
+            text-decoration: underline;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        div {
+            background-color: rgba(97, 137, 138, 0.226);
+            border: 1px solid black;
+        }
+
+        /* img {
+            width: 100px;
+        } */
+
+        .course img {
+            width: 100px;
+        }
+        .course {
+            background-color: white;
+        }
+
+        .course:hover {
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+
+        /* .profile img{
+            width: 50px;
+        } */
+
+        #profile{
+            color: white;
+            border-radius: 20px;
+            background-color: orange;
+        }
+
+        #profile img:first-of-type{
+            width: 200px;
+        }
+
+        #profile .social-icon{
+            width: 50px;
+        }
+
+        
+        #profile:hover {
+            color: black;
+            border-radius: 0px;
+            background-color: yellowgreen;
+        }
+        /* .profile img:nth-of-type(2)
+        {
+            width: 50px;
+        }
+        .profile img:nth-of-type(3)
+        {
+            width: 50px;
+        }
+
+        .profile img:nth-of-type(4)
+        {
+            width: 50px;
+        }
+
+        .profile img:nth-of-type(5)
+        {
+            width: 50px;
+        } */
+
+
+      
+    </style>
+</head>
+<body>
+    <div>
+    <h1>How To Learn React</h1>
+    <h2>What is React</h2>
+    <p>ReactJs is a JavaScript library for building user interfaces</p>
+
+    <h2>What You'll learn</h2>
+    <ol>
+        <li>Git</li>
+        <li>Basic HTML,CSS and JavaScript</li>
+        <li>React and Redux</li>
+        <li>Publish</li>
+    </ol>
+
+    <h2>Course Content</h2>
+
+    <table style="border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th >Number</th>
+                <th >Title</th>
+                <th >Description</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td >01</td>
+                <td >Git</td>
+                <td >Basic HTML Syntax and elements</td>
+            </tr>
+            <tr>
+                <td >02</td>
+                <td >HTML & CSS</td>
+                <td >CSS selectors and how to use them</td>
+            </tr>
+            <tr>
+                <td >03</td>
+                <td >JavaScript</td>
+                <td >Core concepts of JavaScript</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr/>
+    
+
+    <section>
+        <h2>More Courses from the Instructor</h2>
+        <p>
+            This instructor provides a variety of courses beyond just React.
+            Explore the complete list below to discover them
+        </p>
+
+        <div class="course">
+            <h3>Mern Stack</h3>
+            <p>This will cover the MongoDB, Node Js and Express with React</p>
+            <p>Notes: Prior knowledge of ReactJS is required</p>
+            <img
+            alt="MernStack logo" 
+            src="mern.png"
+            />
+        </div>
+
+        <div class="course">
+            <h3>NEXT JS</h3>
+            <p>This will cover SSR, SSG, API handling and Development</p>
+            <p>Notes: Prior knowledge of ReactJS is required</p>
+            <img
+            alt="NextJS logo" 
+            src="next.png"
+            />
+        </div>
+
+        <div class="course">
+            <h3>GATSBY JS</h3>
+            <p>This will cover SSR, SSG, API handling and Development</p>
+            <p>Notes: Prior knowledge of ReactJS is required</p>
+            <img 
+            alt="GatsbyJS logo"
+            src="gats.png"
+            />
+        </div>
+
+    </section>
+
+    <section>
+        <h2>About the Instructor</h2>
+
+        <div id="profile">
+        <h3>Mohamed Shazan</h3>
+        <p>MERN Stack Developer</p>
+        <img 
+        alt="Mohamed Shazan"
+        src="Shazan.JPG" />
+
+        <img 
+        class="social-icon"
+        src="linkedin.png" 
+        alt="linked logo"
+        />
+        <img 
+        class="social-icon"
+        src="fb.png"
+        alt="facebook logo"
+        />
+        <img 
+        class="social-icon"
+        src="inst.jpeg" 
+        alt="instagram logo"
+        />
+        <img 
+        class="social-icon"
+        src="git.png"
+        alt="github logo"
+        />
+
+    </div>
+    </section>
+
+    </div>
+</body>
+</html>
