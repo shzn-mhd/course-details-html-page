@@ -95,7 +95,44 @@
         tbody tr:nth-child(odd){
             background-color: white;
         }
-      
+
+        #courseregistration p::first-letter {
+            font-size: 50px;
+        }
+        #courseregistration p::first-line{
+            color: red;
+        }
+
+        input,
+        select {
+            margin-top: 10px;
+            padding: 8px;
+            border: 1px solid;
+            margin-top: 10px;
+        }
+
+        input:valid{
+            border-bottom: #2ecc71;
+        }
+
+        input:invalid{
+            border-color: red;
+        }
+
+        
+
+        button {
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #resetbutton {
+            background-color: red;
+        }
+        
+
     </style>
 </head>
 <body>
@@ -231,6 +268,54 @@
     </div>
     </section>
 
+    <section id="courseregistration">
+        <h2>Course Registration</h2>
+        <p>
+            What You've to do is just simply fill out the following form. You'll
+            get an email within 5 working days
+        </p>
+
+        <form action="result.html" method="get" enctype="multipart/form-data">
+            <div>
+                <label for="firtsname"> First Name:</label>
+                <input id="firstname" type="text" name="firstname" required/>
+            </div>
+
+            <div>
+                <label for="email"> Email:</label>
+                <input id="email" type="email" name="email" required/>
+            </div>
+            
+            <div>
+                <label for="phone"> Phone:</label>
+                <input id="phone" type="tel" name="phone"/>
+            </div>
+
+            <div>
+                <label for="birthday"> Birtday:</label>
+                <input id="birthday" type="date" name="birthday" max="2024-01-24"/>
+            </div>
+
+            <div>
+                <label for="gender"> Gender:</label>
+                <select id="gender" name="gender" multiple>
+                   <option value="male" label="Male"></option>
+                   <option value="female">Female</option> 
+                   <option value="notprefertosay">Not Prefer to Say</option> 
+                </select>
+            </div>
+
+            <div>
+                <label for="resume">Resume :</label>
+                <input id="resume" type="file" name="resume">
+            </div>
+
+            <button type="submit">Submit</button>
+            <button id="resetbutton" type="reset">Reset</button>
+        </form>
+
+    </section>
+
     </div>
 
     <!-- <div style="background-color: blueviolet;">
@@ -254,5 +339,6 @@
         <div style="background-color: chocolate; height: 200px;">
         </div>
     </div> -->
+
 </body>
 </html>
